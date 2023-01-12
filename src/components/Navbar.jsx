@@ -11,18 +11,19 @@ import User from "../images/user.png";
 import Wish from "../images/heart.png";
 import Cart from "../images/cart.png";
 
-function BasicExample() {
+
+function NavTop() {
   return (
     <Navbar bg="white" expand="lg" className="navTop">
       <Container>
-        <Navbar.Brand href="/" style={{ marginRight: "20px" }}>
-          <img
+        <Navbar.Brand href="/" style={{ marginRight: "20px",display:"flex"}}>
+         <img
             src={Logo}
             alt=""
-            style={{ height: "40px", marginRight: "10px" }}
-          />
-          StreeKart
-        </Navbar.Brand>
+            style={{ height: "30px", marginRight: "10px" }}/>StreeKart</Navbar.Brand>
+      
+       
+        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -133,4 +134,7 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+
+
+
+export default NavTop;
